@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<taglib 
+    xmlns="http://java.sun.com/xml/ns/javaee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-jsptaglibrary_2_1.xsd"
+    version="2.1">
+
+    <display-name>displayUtils</display-name>    
+    <tlib-version>1.0</tlib-version>
+    <short-name>displayUtils</short-name>
+	<uri>/StudentWebMVC/src/main/webapp/WEB-INF/tags/functions.tld</uri>
+	 
+
+    <function>
+        <name>phoneFormat</name>
+        <function-class>edu.ucla.dt.studentweb.mvc.utils.PhoneFormatUtils</function-class>
+        <function-signature>java.lang.String phoneFormat(java.lang.String)</function-signature>
+    </function>
+
+    <function>
+        <name>zipCodeFormat</name>
+        <function-class>edu.ucla.dt.studentweb.mvc.utils.AddressFormatUtils</function-class>
+        <function-signature>java.lang.String zipCodeFormat(java.lang.String)</function-signature>
+    </function>
+
+    <function>
+        <name>getFeature</name>
+        <function-class>edu.ucla.dt.studentweb.mvc.service.impl.MenuServiceImpl</function-class>
+        <function-signature>edu.ucla.dt.studentweb.dao.domain.menu.Feature getFeatureById(java.lang.Integer)</function-signature>
+    </function>
+</taglib>
